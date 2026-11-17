@@ -1,0 +1,12 @@
+column_name	meaning	units	source_table	missing_value_coding
+patient_id	De-identified TCGA patient identifier; unique row key	Not applicable	patients	None observed; required
+sex	Recorded sex	Category	patients	NA; retained without imputation
+age_at_diagnosis	Age at diagnosis	Years	patients	NA; retained without imputation
+stage	Recorded tumor stage; original labels retained	Category	patients	NA; retained without imputation
+tissue_source_site	Recorded tissue source site code	Site code	samples	NA if absent; none observed
+tmb_nonsynonymous	Recorded nonsynonymous tumor mutation burden; not recalculated	Mutations per megabase	samples	NA if absent; none observed
+TP53_count	Number of recorded TP53 mutation rows; includes Frame_Shift_Del, Frame_Shift_Ins, In_Frame_Del, In_Frame_Ins, Missense_Mutation, Nonsense_Mutation, Nonstop_Mutation, Splice_Site, Translation_Start_Site; excludes Silent	Mutation records	mutations via samples.patient_id	0 = no qualifying record; no NA; does not establish assay completeness
+KRAS_count	Number of recorded KRAS mutation rows; includes Frame_Shift_Del, Frame_Shift_Ins, In_Frame_Del, In_Frame_Ins, Missense_Mutation, Nonsense_Mutation, Nonstop_Mutation, Splice_Site, Translation_Start_Site; excludes Silent	Mutation records	mutations via samples.patient_id	0 = no qualifying record; no NA; does not establish assay completeness
+EGFR_count	Number of recorded EGFR mutation rows; includes Frame_Shift_Del, Frame_Shift_Ins, In_Frame_Del, In_Frame_Ins, Missense_Mutation, Nonsense_Mutation, Nonstop_Mutation, Splice_Site, Translation_Start_Site; excludes Silent	Mutation records	mutations via samples.patient_id	0 = no qualifying record; no NA; does not establish assay completeness
+STK11_count	Number of recorded STK11 mutation rows; includes Frame_Shift_Del, Frame_Shift_Ins, In_Frame_Del, In_Frame_Ins, Missense_Mutation, Nonsense_Mutation, Nonstop_Mutation, Splice_Site, Translation_Start_Site; excludes Silent	Mutation records	mutations via samples.patient_id	0 = no qualifying record; no NA; does not establish assay completeness
+KEAP1_count	Number of recorded KEAP1 mutation rows; includes Frame_Shift_Del, Frame_Shift_Ins, In_Frame_Del, In_Frame_Ins, Missense_Mutation, Nonsense_Mutation, Nonstop_Mutation, Splice_Site, Translation_Start_Site; excludes Silent	Mutation records	mutations via samples.patient_id	0 = no qualifying record; no NA; does not establish assay completeness
